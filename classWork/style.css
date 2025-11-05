@@ -1,0 +1,63 @@
+.centered-body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	margin: 0;
+}
+
+.boxes{
+    position: relative;
+    width: 420px;
+    height: 420px;
+}
+
+.child{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: red;
+    border: 3px solid #222;
+    border-radius: 12px;
+    box-shadow: 20px 15px 15px 0 rgba(6, 2, 4, .5);
+    top: 50%;
+    left: 50%;
+    margin-top: -60px;   
+    margin-left: -60px; 
+    transition: top 0.6s ease, left 0.6s ease, transform 0.6s ease, background-color 0.6s ease;
+}
+
+
+.rotate{ transform: translate(-70px, -70px); }
+.scale{ transform: translate(70px, -70px); }
+.translate{ transform: translate(-70px, 70px); }
+.skew{ transform: translate(70px, 70px); }
+
+.boxes:hover .rotate{
+    top: 0; left: 0;
+    transform: translate(0, 80deg., );
+    background-color: red;
+    box-shadow: 0 0 20px red, 0 0 40px red;
+    
+}
+.boxes:hover .scale{
+    top: 0; left: 100%;
+    transform: translate(-100%, 0);
+    background-color: green;
+    
+    box-shadow: 0 0 20px green, 0 0 40px green;
+}
+.boxes:hover .translate{
+    top: 100%; left: 0;
+    transform: translate(0, -100%);
+    background-color: blue;
+    box-shadow: 0 0 20px blue, 0 0 40px blue
+    
+}
+.boxes:hover .skew{
+    top: 100%; left: 100%;
+    transform: translate(-100%, -100%);
+    background-color: yellow;
+    box-shadow: 0 0 20px #f6fd64, 0 0 40px #ddff1e;
+    
+}
