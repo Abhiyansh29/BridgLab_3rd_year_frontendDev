@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="alert alert-primary">Content</div>
+      <div class="container">
+        <div class="alert alert-secondary">Content</div>
+      </div>
+      <div class="alert alert-success">Content</div>
+      <div class="container">
+        <div class="alert alert-danger">Content</div>
+      </div>
+      <div class="alert alert-warning">Content</div>
+      <div class="container">
+        <div class="alert alert-light">Content</div>
+      </div>
+      <div class="alert alert-dark">Content</div>
+    </div>
+
+    <div class="progress m-5">
+      <div
+        class="progress-bar progress-bar-animated progress-bar-striped"
+        style="width: 50%"
+      >
+        50%
+      </div>
+    </div>
+    <button
+      class="btn btn-primary"
+      data-bs-toggle="collapse"
+      data-bs-target="#test"
+    >
+      Test Bootstrap JS
+    </button>
+
+    <div id="test" class="collapse mt-3">
+      <div class="alert alert-success">✅ Bootstrap JS is working!</div>
+    </div>
+
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
